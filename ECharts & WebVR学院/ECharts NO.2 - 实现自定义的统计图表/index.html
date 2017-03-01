@@ -10,12 +10,108 @@
 <script type="text/javascript">
     var myChart = echarts.init(document.getElementById('main'));
     var option = {
-        title: [{text: '图表示例'},{subtext:'变换样式'}],
+        backgroundColor: '#d7e5ec',
+        title: {
+            text: 'What\'s my redit score?',
+            textStyle: {
+                fontSize: 30
+            },
+            subtext: 'Puerto Rico,% decrease on a year earlier',
+            subtextStyle: {
+                fontSize: 20
+            },
+            left: 70
+        },
         tooltip: {},
-        legend: {data: ['柱形单位','折线单位']},
-        xAxis: {data: ['项目一', '项目二', '项目三', '项目四', '项目五', '项目六', '项目七']},
-        yAxis: [{type:'value',name:'标尺一',inverse:true,min:0,max:100,interval:10,axisLabel:{formatter:'{value}m'}},{type:'value',name:'标尺二',inverse:true,min:0,max:50,interval:10,axisLabel:{formatter:'{value}min'}}],
-        series: [{name: '柱形单位', type: 'bar',itemStyle:{normal:{color:'#243499'}}, data: [4,6,21,23,14,32,9]},{name: '折线单位', type: 'line',itemStyle:{normal:{color:'#B24995'}}, yAxisIndex:1,data: [4,6,21,23,14,32,9]}]
+        legend: {
+            data: ['Population', 'GDP'],
+            left: 75,
+            top: 80,
+            itemWidth: 50,
+            itemHeight: 20
+        },
+        grid: {
+            top: 120
+        },
+        xAxis: [{
+            data: ['2006', '07', '08', '09', '10', '11', '12', '13', '14', '15'],
+            axisLine: {
+                onZero: false,
+                lineStyle: {
+                    width: 2
+                }
+            },
+            axisTick: {
+                inside: true,
+                lineStyle: {
+                    width: 2
+                }
+            }
+        }, {
+            axisLine: {
+                lineStyle: {
+                    color: '#e9625a',
+                    width: 2
+                }
+            },
+            z: 5
+        }],
+        yAxis: [{
+            type: 'value',
+            inverse: true,
+            min: 0,
+            max: 100,
+            interval: 10,
+            axisLabel: {
+                formatter: '{value}'
+            },
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#fff',
+                    width: 2
+                }
+            }
+        }, {
+            type: 'value',
+            inverse: true,
+            min: 0,
+            max: 50,
+            interval: 10,
+            axisLabel: {
+                formatter: '{value}'
+            },
+            axisLine: {
+                show: false
+            },
+            axisTick: {
+                show: false
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#fff',
+                    width: 2
+                }
+            }
+        }],
+        series: [{
+            name: 'Population',
+            type: 'bar',
+            itemStyle: {normal: {color: '#33758a'}},
+            data: [4, 6, 21, 23, 14, 32, 9, 20, 20, 11]
+        }, {
+            name: 'GDP',
+            type: 'bar',
+            itemStyle: {normal: {color: '#33b6e3'}},
+            yAxisIndex: 1,
+            data: [4, 6, 21, 23, 14, 32, 9, 6, 12, 15],
+            barGap: 0
+        }]
     };
     myChart.setOption(option);
 </script>

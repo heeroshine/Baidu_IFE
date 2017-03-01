@@ -26,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ECharts &amp; WebVR学院/ECharts NO.2 - 实现自定义的统计图表/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+            <state relative-caret-position="300">
+              <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -260,7 +260,7 @@
       <workItem from="1488172103694" duration="792000" />
       <workItem from="1488201007131" duration="3275000" />
       <workItem from="1488255305067" duration="541000" />
-      <workItem from="1488331923244" duration="2067000" />
+      <workItem from="1488331923244" duration="7823000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1487990153956</created>
@@ -287,7 +287,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9851000" />
+    <option name="totallyTimeSpent" value="15607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ECharts &amp; WebVR学院/ECharts NO.2 - 实现自定义的统计图表/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="7" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
+        <state relative-caret-position="300">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
