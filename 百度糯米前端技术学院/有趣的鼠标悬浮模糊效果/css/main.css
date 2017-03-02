@@ -1,0 +1,111 @@
+body {
+    background: #121212;
+}
+
+.pic {
+    width: 500px;
+    height: 325px;
+    margin: 5% auto 0;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.pic img {
+    float: left;
+    transform: scale(1.1);
+    transition: opacity 0.45s, transform 0.45s;
+}
+
+.pic h2 {
+    padding: 26% 0 0 0;
+    text-shadow: 1px 1px 0 #121212;
+    transition: all 0.45s;
+    transform: scale(1.1);
+}
+
+.pic p {
+    transition: opacity 0.45s, transform 0.45s;
+    opacity: 0;
+    transform: translate3d(0, -10px, 0);
+    font-weight: bolder;
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.line:before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    bottom: 40px;
+    left: 20px;
+    right: 20px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: scale(0, 1);
+    transform-origin: 0 0;
+}
+
+.line:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 40px;
+    right: 40px;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    transform: scale(1, 0);
+    transform-origin: 100% 0;
+}
+
+.pic:hover img {
+    transform: scale(1);
+    opacity: 0.8;
+    filter: blur(3px);
+}
+
+.pic:hover h2 {
+    transition-delay: 0.15s;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.pic:hover p {
+    transition-delay: 0.15s;
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    animation-name: sliver;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /*animation-direction: alternate;*/
+    animation-delay: 0.5s;
+    background: -webkit-linear-gradient(left, #ff8000, #ffff00 25%, #ff8000 50%, #ffff00 75%, #ff8000);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-background-size: 200% 100%;
+}
+
+@keyframes sliver {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
+}
+
+.pic:hover .line:before, .pic:hover .line:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.pic:hover .line:before, .pic:hover .line:after {
+    transition: opacity 0.45s, transform 0.45s;
+}
